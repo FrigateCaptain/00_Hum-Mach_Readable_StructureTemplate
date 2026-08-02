@@ -16,6 +16,20 @@
 
 ---
 
+## [1.1.0] — 2026-08-02
+
+### Добавлено
+
+- Тип папки `groundwork` в `template/groundwork/` (каталог, указатели, сквозные обзоры)
+- Обязательный файл каркаса `RELEVANT_GROUNDWORK.md` в типах project, process, storage, settings-n-servers, meta-registry
+
+### Изменено
+
+- Корневые `README.md`, `STRUCTURE_GUIDE.md`, `workflows/STRUCTURE_WORKFLOW.md` — шесть типов; groundwork и `RELEVANT_GROUNDWORK.md` в стандартном каркасе
+- Порядок и формулировки типов в таблице README (storage последним)
+
+---
+
 ## [1.0.0] — 2026-08-02
 
 ### Добавлено
@@ -26,4 +40,5 @@
 
 ---
 
+[1.1.0]: https://github.com/FrigateCaptain/00_Hum-Mach_Readable_StructureTemplate/compare/v1.0.0...v1.1.0
 [1.0.0]: https://github.com/FrigateCaptain/00_Hum-Mach_Readable_StructureTemplate/releases/tag/v1.0.0
