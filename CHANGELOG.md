@@ -16,6 +16,14 @@
 
 ---
 
+## [1.1.2] — 2026-08-03
+
+### Добавлено
+
+- `assets/social-preview.png` — картинка Social preview для превью ссылки на репозиторий в Telegram и соцсетях
+
+---
+
 ## [1.1.1] — 2026-08-03
 
 ### Удалено
@@ -49,6 +57,7 @@
 
 ---
 
+[1.1.2]: https://github.com/FrigateCaptain/00_Hum-Mach_Readable_StructureTemplate/compare/v1.1.1...v1.1.2
 [1.1.1]: https://github.com/FrigateCaptain/00_Hum-Mach_Readable_StructureTemplate/compare/v1.1.0...v1.1.1
 [1.1.0]: https://github.com/FrigateCaptain/00_Hum-Mach_Readable_StructureTemplate/compare/v1.0.0...v1.1.0
 [1.0.0]: https://github.com/FrigateCaptain/00_Hum-Mach_Readable_StructureTemplate/releases/tag/v1.0.0
