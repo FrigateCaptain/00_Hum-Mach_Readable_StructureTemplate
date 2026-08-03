@@ -16,6 +16,15 @@
 
 ---
 
+## [1.1.1] — 2026-08-03
+
+### Удалено
+
+- `STYLE_NOTES.md` — внутренние стилистические правила авторов; не часть шаблона для пользователей
+- `publish.yaml.example` — образец служебного флага публикации; не часть шаблона для пользователей
+
+---
+
 ## [1.1.0] — 2026-08-02
 
 ### Добавлено
@@ -40,5 +49,6 @@
 
 ---
 
+[1.1.1]: https://github.com/FrigateCaptain/00_Hum-Mach_Readable_StructureTemplate/compare/v1.1.0...v1.1.1
 [1.1.0]: https://github.com/FrigateCaptain/00_Hum-Mach_Readable_StructureTemplate/compare/v1.0.0...v1.1.0
 [1.0.0]: https://github.com/FrigateCaptain/00_Hum-Mach_Readable_StructureTemplate/releases/tag/v1.0.0
