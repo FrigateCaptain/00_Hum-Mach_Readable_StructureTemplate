@@ -6,7 +6,7 @@
 
 ## Что сюда класть
 
-- карту `WORKSPACE_REVIEW.md`, `registries/`, `BACKLOG.md` и `workflows/`;
+- карту `WORKSPACE_REVIEW.md`, `WORKSPACE_EXTERNAL_FOLDERS.md`, опциональных `DECISION_LOG.md` и `WORK_LOG.md`, `registries/`, `BACKLOG.md` и `workflows/`;
 - правила маршрутизации к каноническим реестрам;
 - ссылки на связанные обзорные документы.
 

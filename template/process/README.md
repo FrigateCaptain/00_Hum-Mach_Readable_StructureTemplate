@@ -8,7 +8,8 @@
 
 - назначение процесса;
 - частоту или триггеры выполнения;
-- ссылки на `CONTEXT.md`, `PLAN.md`, `FACTS.md`, `BACKLOG.md` и `workflows/`.
+- ссылки на `CONTEXT.md`, `PLAN.md`, `FACTS.md`, `DECISION_LOG.md`, `WORK_LOG.md`, `BACKLOG.md` и `workflows/`;
+- если заведены опциональные слоты — ссылки на `CYCLE_LOG.md`, `VERSION_LOG.md`, `RELEASE_LOG.md`.
 
 ## Чего сюда не класть
 

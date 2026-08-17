@@ -7,7 +7,7 @@
 ## Что сюда класть
 
 - назначение хранилища;
-- карту разделов `FACTS.md`, `reference/`, `inventories/`, `templates/`;
+- карту разделов `FACTS.md`, опциональных `DECISION_LOG.md` и `WORK_LOG.md`, `reference/`, `inventories/`, `templates/`;
 - правила навигации и обновления справочных материалов.
 
 ## Чего сюда не класть

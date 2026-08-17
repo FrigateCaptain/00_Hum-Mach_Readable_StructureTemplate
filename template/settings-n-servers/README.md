@@ -7,7 +7,7 @@
 ## Что сюда класть
 
 - назначение папки (какие серверы, сервисы и конфигурации здесь документируются);
-- карту разделов `FACTS.md`, `SERVICE_CHANGES_LOG.md`, `INCIDENTS.md`, `reference/`, `inventories/`;
+- карту разделов `FACTS.md`, опциональных `DECISION_LOG.md` и `WORK_LOG.md`, `SERVICE_CHANGES_LOG.md`, `INCIDENTS.md`, `reference/`, `inventories/`;
 - правила навигации и обновления серверной документации.
 
 ## Чего сюда не класть

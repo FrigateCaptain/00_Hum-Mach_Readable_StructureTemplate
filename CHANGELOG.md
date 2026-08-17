@@ -16,6 +16,24 @@
 
 ---
 
+## [1.2.0] — 2026-08-17
+
+### Добавлено
+
+- Обязательные журналы `DECISION_LOG.md` и `WORK_LOG.md` в типах project и process
+- Опциональные слоты тех же журналов в settings-n-servers, groundwork, meta-registry и storage
+- Опциональные слоты process: `CYCLE_LOG.md`, `VERSION_LOG.md`, `RELEASE_LOG.md`
+- Placeholder `template/meta-registry/WORKSPACE_EXTERNAL_FOLDERS.md`
+- В `.gitignore` маска `*.bak`
+
+### Изменено
+
+- Корневой `README.md`: H1 и хук в рамке разметки среды «где что лежит» и передачи контекста; разделы «Для кого и зачем», «Что это, если в целом», «Откуда взялось»
+- `STRUCTURE_GUIDE.md`: абзац в начале про разметку и передачу контекста; деревья шести типов согласованы с `template/`; роли журналов; справочник ключевых файлов дополнен формулировками деревьев; методические комментарии (обязательность журналов, граница storage/groundwork)
+- `workflows/STRUCTURE_WORKFLOW.md`: обязательные и опциональные журналы при установке
+
+---
+
 ## [1.1.1] — 2026-08-03
 
 ### Удалено
@@ -49,6 +67,7 @@
 
 ---
 
+[1.2.0]: https://github.com/FrigateCaptain/00_Hum-Mach_Readable_StructureTemplate/compare/v1.1.1...v1.2.0
 [1.1.1]: https://github.com/FrigateCaptain/00_Hum-Mach_Readable_StructureTemplate/compare/v1.1.0...v1.1.1
 [1.1.0]: https://github.com/FrigateCaptain/00_Hum-Mach_Readable_StructureTemplate/compare/v1.0.0...v1.1.0
 [1.0.0]: https://github.com/FrigateCaptain/00_Hum-Mach_Readable_StructureTemplate/releases/tag/v1.0.0

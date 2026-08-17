@@ -7,7 +7,7 @@
 ## Что сюда класть
 
 - назначение папки и модель «канон у домена + каталог + сквозные обзоры»;
-- карту разделов: `CATALOG.md`, `FACTS.md`, `BACKLOG.md`, `INDEXES/`, `crosscutting/`, `_inbox/`;
+- карту разделов: `CATALOG.md`, `FACTS.md`, опциональных `DECISION_LOG.md` и `WORK_LOG.md`, `BACKLOG.md`, `INDEXES/`, `crosscutting/`, `_inbox/`;
 - правила: как добавлять наработку и как проекты/процессы находят нужное через `RELEVANT_GROUNDWORK.md`.
 
 ## Чего сюда не класть

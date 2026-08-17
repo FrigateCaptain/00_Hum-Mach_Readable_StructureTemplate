@@ -8,7 +8,7 @@
 
 - назначение проекта;
 - текущий статус или фазу;
-- ссылки на `CONTEXT.md`, `GOALS.md`, `PLAN.md`, `FACTS.md` и другие ключевые документы.
+- ссылки на `CONTEXT.md`, `GOALS.md`, `PLAN.md`, `FACTS.md`, `DECISION_LOG.md`, `WORK_LOG.md` и другие ключевые документы.
 
 ## Чего сюда не класть
 

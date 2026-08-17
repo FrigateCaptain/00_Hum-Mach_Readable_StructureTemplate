@@ -11,7 +11,11 @@
 - `groundwork/` — шаблон папки центрального хранилища наработок (каталог, индексы, сквозные обзоры).
 - `meta-registry/` — шаблон обзорного слоя и канонических реестров workspace.
 
+В типах `project/` и `process/` обязательны журналы `DECISION_LOG.md` и `WORK_LOG.md`. В `storage/`, `settings-n-servers/`, `groundwork/` и `meta-registry/` те же два файла — опциональный слот. В `process/` дополнительно три опциональных слота: `CYCLE_LOG.md`, `VERSION_LOG.md`, `RELEASE_LOG.md`.
+
 В типах `project/`, `process/`, `storage/`, `settings-n-servers/`, `meta-registry/` есть файл `RELEVANT_GROUNDWORK.md` — локальные ссылки на релевантные материалы из папки типа groundwork.
+
+В `meta-registry/` есть `WORKSPACE_EXTERNAL_FOLDERS.md` — перечень корневых папок workspace вне основного каталога.
 
 ## Как использовать
 
