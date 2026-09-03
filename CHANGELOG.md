@@ -16,6 +16,20 @@
 
 ---
 
+## [1.3.0] — 2026-09-04
+
+### Добавлено
+
+- Три Agent Skills в `.agents/skills/`: `structure-workspace` (весь workspace — открыть и исполнить workflow), `structure-template` (одна папка: каркас или только недостающие бланки), `structure-revise` (одна папка: ревизия, смена типа, разнесение уже лежащего текста)
+- В `workflows/STRUCTURE_WORKFLOW.md`: канон состава с диска (`CHANGELOG`, GUIDE, `find template/`); три колонки сверки существующей папки; запрет затирать лежащие файлы шаблоном; процедура смены типа папки (пять действий по файлу); решение и работа — разные записи журнала; не создавать мета-реестр «заодно»
+
+### Изменено
+
+- Корневой `README.md`: таблица выбора инструкции по объёму задачи; skill в таблице «Что в комплекте»
+- `STRUCTURE_GUIDE.md`: отсылка к workflow всего workspace и skill одной папки
+
+---
+
 ## [1.2.0] — 2026-08-17
 
 ### Добавлено
@@ -67,6 +81,7 @@
 
 ---
 
+[1.3.0]: https://github.com/FrigateCaptain/00_Hum-Mach_Readable_StructureTemplate/compare/v1.2.0...v1.3.0
 [1.2.0]: https://github.com/FrigateCaptain/00_Hum-Mach_Readable_StructureTemplate/compare/v1.1.1...v1.2.0
 [1.1.1]: https://github.com/FrigateCaptain/00_Hum-Mach_Readable_StructureTemplate/compare/v1.1.0...v1.1.1
 [1.1.0]: https://github.com/FrigateCaptain/00_Hum-Mach_Readable_StructureTemplate/compare/v1.0.0...v1.1.0
