@@ -18,6 +18,15 @@
 
 ---
 
+## [1.5.0] — 2026-09-04
+
+### Добавлено
+
+- В skill `structure-revise` и в `workflows/STRUCTURE_WORKFLOW.md`: определение типа папки по трём осям (состав файлов, запись в реестре папок, журналы). Если оси расходятся — спросить. Если сомнений нет — назвать тип сразу и в скобках аргументы по каждой оси. Явно названный пользователем целевой тип остаётся целевым даже при составе другого типа (это смена типа)
+- В GUIDE, workflow и skills: файлы и папки, которых нет в `template/<тип>/`, для живой папки нормальны; каркас — минимальный набор ролей, не полный перечень дозволенного
+
+---
+
 ## [1.4.0] — 2026-09-04
 
 ### Добавлено
@@ -105,6 +114,7 @@
 
 ---
 
+[1.5.0]: https://github.com/FrigateCaptain/00_Hum-Mach_Readable_StructureTemplate/compare/v1.4.0...v1.5.0
 [1.4.0]: https://github.com/FrigateCaptain/00_Hum-Mach_Readable_StructureTemplate/compare/v1.3.1...v1.4.0
 [1.3.1]: https://github.com/FrigateCaptain/00_Hum-Mach_Readable_StructureTemplate/compare/v1.3.0...v1.3.1
 [1.3.0]: https://github.com/FrigateCaptain/00_Hum-Mach_Readable_StructureTemplate/compare/v1.2.0...v1.3.0

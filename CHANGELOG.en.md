@@ -18,6 +18,15 @@ The scheme matches versioning of the public rules corpus [ElucidatingYourLLM](ht
 
 ---
 
+## [1.5.0] — 2026-09-04
+
+### Added
+
+- In skill `structure-revise` and in `workflows/STRUCTURE_WORKFLOW.md`: determine a folder's type from three axes (file set, folder-registry record, journals). If the axes disagree — ask. If there is no doubt — name the type at once and, in parentheses, the arguments on each axis. A target type the user named explicitly remains the target even when the file set still belongs to another type (that is a type change)
+- In the GUIDE, the workflow, and the skills: files and folders that are not in `template/<type>/` are normal in a live folder; the skeleton is a minimum set of roles, not an exhaustive list of what is allowed
+
+---
+
 ## [1.4.0] — 2026-09-04
 
 ### Added
@@ -105,6 +114,7 @@ The scheme matches versioning of the public rules corpus [ElucidatingYourLLM](ht
 
 ---
 
+[1.5.0]: https://github.com/FrigateCaptain/00_Hum-Mach_Readable_StructureTemplate/compare/v1.4.0...v1.5.0
 [1.4.0]: https://github.com/FrigateCaptain/00_Hum-Mach_Readable_StructureTemplate/compare/v1.3.1...v1.4.0
 [1.3.1]: https://github.com/FrigateCaptain/00_Hum-Mach_Readable_StructureTemplate/compare/v1.3.0...v1.3.1
 [1.3.0]: https://github.com/FrigateCaptain/00_Hum-Mach_Readable_StructureTemplate/compare/v1.2.0...v1.3.0

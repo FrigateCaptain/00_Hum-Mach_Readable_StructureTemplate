@@ -1,13 +1,14 @@
 ---
 name: structure-revise
 description: >-
-  Revises one folder against the current Structure Template: three-column
-  diff, type change, splits and edits of existing files. Plan in dialogue
-  first; execute only after confirmation. Use for structure audit, “чего не
-  хватает”, changing folder type, renaming skeleton files, splitting one
-  file, FACTS vs journals. Do not use to only create a folder or add empty
-  missing files — that is skill structure-template. Do not use for
-  whole-workspace install — structure-workspace / STRUCTURE_WORKFLOW.md.
+  Revises one folder against the current Structure Template: three-axis type
+  check (file set, folder registry, journals), three-column diff, type change,
+  splits and edits of existing files. Plan in dialogue first; execute only after
+  confirmation. Use for structure audit, “чего не хватает”, changing folder type,
+  renaming skeleton files, splitting one file, FACTS vs journals. Do not use to
+  only create a folder or add empty missing files — that is skill
+  structure-template. Do not use for whole-workspace install —
+  structure-workspace / STRUCTURE_WORKFLOW.md.
 ---
 
 # Ревизия и реструктуризация папки
@@ -40,10 +41,28 @@ description: >-
 
 Ничего не переименовывать, не удалять, не сливать и не разносить по файлам, пока владелец не подтвердил план. План — список конкретных файлов и действий, не общая фраза «привести к шаблону».
 
+Файлы и папки, которых нет в `template/<тип>/`, для живой папки нормальны. Их не удалять только потому, что их нет в каркасе.
+
+## Определение типа папки
+
+Не выводить тип по одному признаку и не угадывать.
+
+Если пользователь **явно назвал** целевой тип — это целевой тип, даже если состав файлов и реестр ещё от другого. Тогда текущий тип (как папку вели) и целевой могут различаться: это смена типа, не «тип неясен».
+
+Если целевой тип **не назван** — собрать три оси, затем решить.
+
+1. **Состав файлов.** Сверить имена в папке с `find template/<тип>` для шести типов из GUIDE. Какие каркасы ближе (какие обязательные слоты есть только у одного типа).
+2. **Реестр папок.** Если в workspace есть реестр папок (часто `registries/PROJECTS_REGISTRY.md`, `PROCESSES_REGISTRY.md`, `STORES_REGISTRY.md` и аналоги) — как эта папка там записана. Нет записи — зафиксировать «в реестре не отмечена».
+3. **Журналы.** Что написано в `DECISION_LOG.md`, `WORK_LOG.md`, `CYCLE_LOG.md`, `VERSION_LOG.md`, `RELEASE_LOG.md` и в `CONTEXT.md`: цель с концом vs повторяемый цикл, внешние выпуски, внутренняя версия. Журналов нет — зафиксировать «журналов нет».
+
+**Сомнения** (оси расходятся; два типа одинаково близки; картина смешанная) — показать факты по трём осям и спросить, какой это тип. Не выбирать молча.
+
+**Сомнений нет** — сразу назвать тип и в скобках аргументы по каждой оси: состав; реестр; журналы.
+
 ## Шаги ревизии
 
 1. Прочитать верхнюю секцию `CHANGELOG.md`. Сообщить версию.
-2. Зафиксировать текущий тип папки (как её ведут сейчас) и целевой тип (как должно быть). Если целевой не назван — показать шесть типов из GUIDE и спросить.
+2. Определить текущий тип и целевой по разделу «Определение типа папки». Не подставлять тип «как обычно» без трёх осей.
 3. Снять два списка: файлы папки и `find template/<целевой-тип>`.
 4. Показать владельцу три колонки:
    - есть в шаблоне и в папке;

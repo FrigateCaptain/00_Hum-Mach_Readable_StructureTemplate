@@ -83,7 +83,11 @@ Ask the user:
 
    For **each** such folder:
 
-   - Propose a type (or the current type and the **target** type, if the type is changing). If the target is not named — show the six types from the GUIDE and ask. Do not guess.
+   - Determine the type from three axes, not from a single clue:
+     - file set vs `find en/template/<type>` (if missing, `find template/<type>`) for the six GUIDE types;
+     - how the folder is marked in the workspace folder registry, if one exists (no record — say so);
+     - what the journals (`DECISION_LOG`, `WORK_LOG`, `CYCLE_LOG`, `VERSION_LOG`, `RELEASE_LOG`) and `CONTEXT.md` say (no journals — say so).
+     If the user explicitly named the target type — that is the target, even when the file set and registry still belong to another type (a type change). If the target is not named and the axes disagree or the picture is mixed — show the facts on the three axes and ask. If there is no doubt — name the type at once and, in parentheses, the arguments on each axis. Do not guess.
    - Capture two lists: the folder's files and `find en/template/<target-type>`.
    - Show three columns:
      - present in the template and in the folder;
@@ -125,7 +129,7 @@ Methodically execute **only the approved** plan:
 
 1. Create folders and skeleton files for new entities. Replace the template placeholder with the contents of this folder. Do not copy the instructional “Why this file exists” blocks as the final text unless the user asked to keep the blank. Optional slots — only those chosen at stages 1–2; do not create them silently.
 2. Supplement existing folders with **missing** files (column “present in the template, absent from the folder”). Do **not** overwrite files already present under the same name with the template. If the plan includes a split — execute only the confirmed fragments. Do not delete text that has no place in the plan: ask first where to put it.
-3. Do not delete or move files that are extra relative to the template unless that was in the confirmed plan.
+3. Files and folders that are extra relative to the template are normal in a live folder: do not delete or move them unless that was in the confirmed plan.
 4. Update registries in the meta-registry **if** the meta layer was established at stage 2 or already existed. Do not create a meta folder “while you are at it”.
 5. Links in `RELEVANT_GROUNDWORK.md` — only in the affected folders and only per the plan.
 6. If a folder's file composition changed — update that folder's `README.md` (what this is, why it exists, where to look next).
@@ -181,4 +185,4 @@ These criteria are mandatory at the stage “Guiding principles and the sequence
 ---
 
 *Created: 24 April 2026, 22:30*
-*Last updated: 4 September 2026, 00:25*
+*Last updated: 4 September 2026, 01:55*

@@ -290,6 +290,8 @@ The structure should show connections through links: to related projects, regist
 
 The list below is not every possible document, but the main structural roles that repeat across the confirmed workspace patterns. Not every file is required in every type, but each has a clear area of responsibility.
 
+The `template/<type>/` skeleton is a minimum set of roles. Files and folders that are not in the template (materials, drafts, archive, reviews, working scripts) are **normal** in a live folder. Do not delete them or “fit” the folder to the skeleton only because those extras are absent from the template.
+
 ### [README.md](en/template/project/README.md)
 
 - Role: entry point and navigation through the folder.
@@ -480,4 +482,4 @@ PARA (Projects, Areas, Resources, Archives) can be used as an optional heuristic
 ---
 
 *Created: 14 April 2026, 13:55*
-*Last updated: 4 September 2026, 01:25*
+*Last updated: 4 September 2026, 01:55*

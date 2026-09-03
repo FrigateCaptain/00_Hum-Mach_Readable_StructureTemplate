@@ -48,7 +48,7 @@ The directory that contains both `STRUCTURE_GUIDE.md` and `template/`. English t
 3. Read the section for the chosen type in `STRUCTURE_GUIDE.en.md`. If that file is missing, read `STRUCTURE_GUIDE.md` beside it.
 4. Capture the actual composition: `find en/template/<type> -type f`. If the GUIDE tree and `find` diverge — stop and show both lists.
 5. **From scratch:** create files from the current `en/template/<type>/`. Optional slots — ask, do not create silently. Replace the template placeholder with the contents of this folder. Do not copy the instructional “Why this file exists” blocks as the final text unless the user asked to keep the blank.
-6. **Missing files:** compare `find` of the folder with `find en/template/<type>`. Create only what is absent. Do not overwrite files that are already there. Do not delete extras relative to the template.
+6. **Missing files:** compare `find` of the folder with `find en/template/<type>`. Create only what is absent. Do not overwrite files that are already there. Extras relative to the template are normal; do not delete them.
 7. Consumer types (every type except the groundwork folder itself): the file `RELEVANT_GROUNDWORK.md` from the template.
 8. If the workspace already has a folder meta-registry — register the new entity **only** if the user asked for it or it follows from their rules for that registry. Do not create the meta layer “while you are at it”.
-9. Do **not** delete extras relative to the template without being asked. If a move or a split of text is needed — stop and hand off to `structure-revise`.
+9. Files and folders that are extra relative to the template are **normal** in a live folder. Do **not** delete them without being asked. If a move or a split of text is needed — stop and hand off to `structure-revise`.
