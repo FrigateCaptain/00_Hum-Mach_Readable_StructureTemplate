@@ -16,6 +16,14 @@
 
 ---
 
+## [1.3.1] — 2026-09-04
+
+### Добавлено
+
+- Корневой файл `LICENSE`: MIT, copyright FrigateCaptain 2026
+
+---
+
 ## [1.3.0] — 2026-09-04
 
 ### Добавлено
@@ -81,6 +89,7 @@
 
 ---
 
+[1.3.1]: https://github.com/FrigateCaptain/00_Hum-Mach_Readable_StructureTemplate/compare/v1.3.0...v1.3.1
 [1.3.0]: https://github.com/FrigateCaptain/00_Hum-Mach_Readable_StructureTemplate/compare/v1.2.0...v1.3.0
 [1.2.0]: https://github.com/FrigateCaptain/00_Hum-Mach_Readable_StructureTemplate/compare/v1.1.1...v1.2.0
 [1.1.1]: https://github.com/FrigateCaptain/00_Hum-Mach_Readable_StructureTemplate/compare/v1.1.0...v1.1.1
