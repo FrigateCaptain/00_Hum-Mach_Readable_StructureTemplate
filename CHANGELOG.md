@@ -1,5 +1,7 @@
 # Changelog
 
+*[English version: CHANGELOG.en.md](CHANGELOG.en.md)*
+
 Все значимые изменения публичного шаблона структуры workspace.
 
 Формат: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), версии — [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
@@ -13,6 +15,20 @@
 - **PATCH** — правки формулировок без изменения состава структуры и смысла типов.
 
 Схема совпадает с версионированием публичного корпуса правил [ElucidatingYourLLM](https://github.com/FrigateCaptain/ElucidatingYourLLM) (SemVer с объявленным контрактом, выпуск на каждый push, без секции `Unreleased`).
+
+---
+
+## [1.4.0] — 2026-09-04
+
+### Добавлено
+
+- Английские копии рядом с русскими оригиналами: `STRUCTURE_GUIDE.en.md`, `workflows/STRUCTURE_WORKFLOW.en.md`, `CHANGELOG.en.md` и `SKILL.en.md` в каждом из трёх пакетов `.agents/skills/`
+- Полное английское дерево placeholder в `en/template/` (русское `template/` на прежнем месте)
+- Переключатель языка в шапке `STRUCTURE_GUIDE.md` ↔ `STRUCTURE_GUIDE.en.md` и `CHANGELOG.md` ↔ `CHANGELOG.en.md`
+
+### Изменено
+
+- Корневой `README.md` двуязычный (сначала английский блок, затем русский), по раскладке ElucidatingYourLLM; из README есть ссылка на английский Structure Guide
 
 ---
 
@@ -89,6 +105,7 @@
 
 ---
 
+[1.4.0]: https://github.com/FrigateCaptain/00_Hum-Mach_Readable_StructureTemplate/compare/v1.3.1...v1.4.0
 [1.3.1]: https://github.com/FrigateCaptain/00_Hum-Mach_Readable_StructureTemplate/compare/v1.3.0...v1.3.1
 [1.3.0]: https://github.com/FrigateCaptain/00_Hum-Mach_Readable_StructureTemplate/compare/v1.2.0...v1.3.0
 [1.2.0]: https://github.com/FrigateCaptain/00_Hum-Mach_Readable_StructureTemplate/compare/v1.1.1...v1.2.0
