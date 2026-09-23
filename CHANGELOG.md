@@ -18,6 +18,14 @@
 
 ---
 
+## [1.5.1] — 2026-09-23
+
+### Изменено
+
+- `SERVICE_CHANGES_LOG` в типе settings-n-servers ведёт изменения на серверах, на компьютерах и в настройках: что, где, когда, зачем и с каким эффектом. Действующее значение остаётся в `FACTS.md`. То же в `STRUCTURE_GUIDE.md` и в placeholder `template/settings-n-servers/SERVICE_CHANGES_LOG.md`, и в английских парах
+
+---
+
 ## [1.5.0] — 2026-09-04
 
 ### Добавлено
@@ -114,6 +122,7 @@
 
 ---
 
+[1.5.1]: https://github.com/FrigateCaptain/00_Hum-Mach_Readable_StructureTemplate/compare/v1.5.0...v1.5.1
 [1.5.0]: https://github.com/FrigateCaptain/00_Hum-Mach_Readable_StructureTemplate/compare/v1.4.0...v1.5.0
 [1.4.0]: https://github.com/FrigateCaptain/00_Hum-Mach_Readable_StructureTemplate/compare/v1.3.1...v1.4.0
 [1.3.1]: https://github.com/FrigateCaptain/00_Hum-Mach_Readable_StructureTemplate/compare/v1.3.0...v1.3.1

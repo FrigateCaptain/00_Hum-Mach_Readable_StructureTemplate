@@ -18,6 +18,14 @@ The scheme matches versioning of the public rules corpus [ElucidatingYourLLM](ht
 
 ---
 
+## [1.5.1] — 2026-09-23
+
+### Changed
+
+- In the settings-n-servers type, `SERVICE_CHANGES_LOG` records changes on servers, on computers, and in settings: what, where, when, why, and with what effect. The current value stays in `FACTS.md`. The same wording is in `STRUCTURE_GUIDE.en.md` and in the placeholder `en/template/settings-n-servers/SERVICE_CHANGES_LOG.md`, and in the Russian pairs
+
+---
+
 ## [1.5.0] — 2026-09-04
 
 ### Added
@@ -114,6 +122,7 @@ The scheme matches versioning of the public rules corpus [ElucidatingYourLLM](ht
 
 ---
 
+[1.5.1]: https://github.com/FrigateCaptain/00_Hum-Mach_Readable_StructureTemplate/compare/v1.5.0...v1.5.1
 [1.5.0]: https://github.com/FrigateCaptain/00_Hum-Mach_Readable_StructureTemplate/compare/v1.4.0...v1.5.0
 [1.4.0]: https://github.com/FrigateCaptain/00_Hum-Mach_Readable_StructureTemplate/compare/v1.3.1...v1.4.0
 [1.3.1]: https://github.com/FrigateCaptain/00_Hum-Mach_Readable_StructureTemplate/compare/v1.3.0...v1.3.1

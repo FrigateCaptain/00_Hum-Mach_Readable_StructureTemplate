@@ -123,7 +123,7 @@ How to read this type:
 
 - the folder is responsible for infrastructure documentation, not for general-purpose reference knowledge;
 - `FACTS.md` stores addresses, ports, identifiers, and key parameters of servers and networks;
-- `SERVICE_CHANGES_LOG.md` keeps a log of service changes: what, where, when, why, and with what effect; this is not the folder's `WORK_LOG.md`;
+- `SERVICE_CHANGES_LOG.md` keeps a log of changes on servers, on computers, and in settings: what, where, when, why, and with what effect; this is not the folder's `WORK_LOG.md`; the current value stays in `FACTS.md`;
 - `INCIDENTS.md` records infrastructure incidents: symptoms, causes, consequences, investigation status;
 - `RELEVANT_GROUNDWORK.md` points to cross-cutting groundwork materials that help when maintaining infrastructure documentation;
 - `reference/` and `inventories/` group documentation by topic (servers, VPN, proxies, and so on);
@@ -426,9 +426,9 @@ A backbone file for the project, process, storage, settings-n-servers, and meta-
 
 ### [SERVICE_CHANGES_LOG.md](en/template/settings-n-servers/SERVICE_CHANGES_LOG.md)
 
-- Role: keep a log of changes to services, settings, and infrastructure behavior.
-- What to store: what exactly was changed, where, when, why, and with what effect.
-- When to update: immediately after a systemically significant setting, service, or infrastructure configuration is changed.
+- Role: keep a log of changes on servers, on computers, and in settings.
+- What to store: what exactly was changed, where (server, computer, or setting), when, why, and with what effect.
+- When to update: immediately after a change on a server, on a computer, or in a setting. The current value stays in `FACTS.md`.
 - What not to do: do not leave such changes only in chat memory or in incidental technical notes; do not put work on the folder's documents here (`WORK_LOG.md`) or the choice of a standard (`DECISION_LOG.md`).
 - Example: [`en/template/settings-n-servers/SERVICE_CHANGES_LOG.md`](en/template/settings-n-servers/SERVICE_CHANGES_LOG.md)
 
@@ -482,4 +482,5 @@ PARA (Projects, Areas, Resources, Archives) can be used as an optional heuristic
 ---
 
 *Created: 14 April 2026, 13:55*
-*Last updated: 4 September 2026, 01:55*
+*Last updated: 23 September 2026, 13:12 — `SERVICE_CHANGES_LOG`: servers, computers, and settings*
+*Previous update: 4 September 2026, 01:55*

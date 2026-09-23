@@ -2,12 +2,12 @@
 
 ## Why this file exists
 
-A log of changes to services, settings, and infrastructure behavior.
+A log of changes on servers, on computers, and in settings.
 
 ## What belongs here
 
 - what exactly was changed;
-- where (which server, service, configuration);
+- where (server, computer, setting, service, or configuration);
 - when;
 - why;
 - with what effect.
