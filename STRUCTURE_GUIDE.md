@@ -42,6 +42,7 @@ NN_ProjectName/
 ├── WORK_LOG.md
 ├── BACKLOG.md
 ├── RELEVANT_GROUNDWORK.md
+├── VALUABLE_FINDINGS_REGISTRY.md
 ├── subprojects/
 └── workflows/
 ```
@@ -58,6 +59,7 @@ NN_ProjectName/
 - `WORK_LOG.md` — журнал фиксации работ и сделанного: у каждого события есть исполнитель и артефакт.
 - `BACKLOG.md` держит то, что отложено, но не потеряно.
 - `RELEVANT_GROUNDWORK.md` указывает на релевантные наработки — без копирования и задублирования их.
+- `VALUABLE_FINDINGS_REGISTRY.md` — опциональный слот. Сюда пишут, какие материалы просмотрены и какую мысль из них оставляют. Это не наработка, которую переносят в дело, и не `RELEVANT_GROUNDWORK.md`.
 - `subprojects/` добавляется, когда внутри проекта появляется отдельный исследовательский или рабочий контур.
 - `workflows/` хранит инструкции; workflow не равен процессу и не заменяет отдельную процессную папку.
 
@@ -80,6 +82,7 @@ NN_ProcessName/
 ├── RELEASE_LOG.md
 ├── BACKLOG.md
 ├── RELEVANT_GROUNDWORK.md
+├── VALUABLE_FINDINGS_REGISTRY.md
 └── workflows/
 ```
 
@@ -91,6 +94,7 @@ NN_ProcessName/
 - `FACTS.md` хранит устойчивые настройки, ссылки, параметры и договорённости;
 - `DECISION_LOG.md` — журнал фиксации решений про логику процесса;
 - `WORK_LOG.md` — журнал фиксации работ по корректировке процесса;
+- `VALUABLE_FINDINGS_REGISTRY.md` — опциональный слот, тот же, что у проекта;
 - `CYCLE_LOG.md`, `VERSION_LOG.md`, `RELEASE_LOG.md` — опциональные слоты; заводить по критерию, имя можно выбрать при установке;
   - `CYCLE_LOG.md` — исполнение повторяющегося цикла (не путать с `WORK_LOG.md`: тот про корректировку процесса);
   - `VERSION_LOG.md` — внутренние версии процесса и/или системы, которая его обслуживает;
@@ -147,6 +151,7 @@ NN_groundwork/
 ├── DECISION_LOG.md
 ├── WORK_LOG.md
 ├── BACKLOG.md
+├── VALUABLE_FINDINGS_REGISTRY.md
 ├── INDEXES/
 ├── crosscutting/
 └── _inbox/
@@ -158,6 +163,7 @@ NN_groundwork/
 - `CATALOG.md` — единый реестр записей о наработках (указатели, сквозные обзоры, ссылки на доменные каноны снаружи);
 - `FACTS.md` — устойчивые факты о самой системе groundwork: модель хранения, соглашения об ID, правила discoverability;
 - `BACKLOG.md` — идеи и улучшения самой системы groundwork вне текущего фокуса;
+- `VALUABLE_FINDINGS_REGISTRY.md` — опциональный слот. Сюда пишут, какие материалы просмотрены и какую мысль из них оставляют. Записи каталога наработок сюда не переносят;
 - `INDEXES/` — тематические указатели (ссылки на материалы, без дублирования канонов);
 - `crosscutting/` — сквозные обзоры, у которых нет сильного доменного дома;
 - `_inbox/` — черновики до классификации;
@@ -244,6 +250,7 @@ NN_KnowledgeBase/
 ├── DECISION_LOG.md
 ├── WORK_LOG.md
 ├── RELEVANT_GROUNDWORK.md
+├── VALUABLE_FINDINGS_REGISTRY.md
 ├── reference/
 ├── inventories/
 └── templates/
@@ -255,6 +262,7 @@ NN_KnowledgeBase/
 - `README.md` объясняет состав разделов и точка входа;
 - `FACTS.md` хранит канонические параметры, идентификаторы и подтверждённые решения;
 - `RELEVANT_GROUNDWORK.md` связывает хранилище с релевантными указателями и обзорами в папке groundwork;
+- `VALUABLE_FINDINGS_REGISTRY.md` — опциональный слот. Сюда пишут, какие материалы просмотрены и какую мысль из них оставляют;
 - вложенные папки группируют материалы по теме, а не по случайному происхождению файлов;
 - `DECISION_LOG.md` и `WORK_LOG.md` — опциональные слоты: решения о нормах, стандартах или требованиях по ведению хранилища, и по фактической работе с его структурой.
 
@@ -358,6 +366,15 @@ NN_KnowledgeBase/
 - Аналоги: [`template/process/RELEVANT_GROUNDWORK.md`](template/process/RELEVANT_GROUNDWORK.md), [`template/storage/RELEVANT_GROUNDWORK.md`](template/storage/RELEVANT_GROUNDWORK.md), [`template/settings-n-servers/RELEVANT_GROUNDWORK.md`](template/settings-n-servers/RELEVANT_GROUNDWORK.md), [`template/meta-registry/RELEVANT_GROUNDWORK.md`](template/meta-registry/RELEVANT_GROUNDWORK.md)
 
 Опорный файл для типов project, process, storage, settings-n-servers и meta-registry. В самой папке groundwork этот файл не нужен: там живут каталог, индексы и обзоры.
+
+### [VALUABLE_FINDINGS_REGISTRY.md](template/project/VALUABLE_FINDINGS_REGISTRY.md)
+
+- Роль: список того, что оставили как ценное после просмотра и изучения материалов. Английское имя файла — registry of valuable findings.
+- Что хранить: какие материалы просмотрены и где лежит каждый; по каждому предмету — мысль, которую стоит сохранить. Мысль пишется так, чтобы её понял человек, который сам материал не открывал. Рядом — откуда она взята.
+- Когда заводить: в project, process, groundwork и storage, когда такой список нужен. В settings-n-servers и meta-registry слота нет.
+- Чего не делать: не записывать рабочий механизм, скрипт или приём, который переносят в дело. Для этого служат наработки groundwork, `CATALOG.md` и `RELEVANT_GROUNDWORK.md`. Не дублировать `FACTS.md` и `BACKLOG.md`.
+- Пример: [`template/project/VALUABLE_FINDINGS_REGISTRY.md`](template/project/VALUABLE_FINDINGS_REGISTRY.md)
+- Аналоги: [`template/process/VALUABLE_FINDINGS_REGISTRY.md`](template/process/VALUABLE_FINDINGS_REGISTRY.md), [`template/groundwork/VALUABLE_FINDINGS_REGISTRY.md`](template/groundwork/VALUABLE_FINDINGS_REGISTRY.md), [`template/storage/VALUABLE_FINDINGS_REGISTRY.md`](template/storage/VALUABLE_FINDINGS_REGISTRY.md)
 
 ### [DECISION_LOG.md](template/project/DECISION_LOG.md)
 
@@ -469,7 +486,7 @@ NN_KnowledgeBase/
 
 ### Журналы в каркасе
 
-В каркасе **project** и **process** обязательны два журнала: `DECISION_LOG.md` (нормы, которые могли быть иначе) и `WORK_LOG.md` (работы с исполнителем и артефактом). В остальных четырёх типах те же файлы — опциональный слот. У process дополнительно три опциональных слота: `CYCLE_LOG.md`, `VERSION_LOG.md`, `RELEASE_LOG.md`.
+В каркасе **project** и **process** обязательны два журнала: `DECISION_LOG.md` (нормы, которые могли быть иначе) и `WORK_LOG.md` (работы с исполнителем и артефактом). В остальных четырёх типах те же файлы — опциональный слот. У project, process, groundwork и storage дополнительно опциональный слот `VALUABLE_FINDINGS_REGISTRY.md`: список того, что оставили как ценное после просмотра материалов. Это не наработка, которую переносят в дело. У process ещё три опциональных слота: `CYCLE_LOG.md`, `VERSION_LOG.md`, `RELEASE_LOG.md`.
 
 ### Про «базу знаний»
 

@@ -42,6 +42,7 @@ NN_ProjectName/
 ├── WORK_LOG.md
 ├── BACKLOG.md
 ├── RELEVANT_GROUNDWORK.md
+├── VALUABLE_FINDINGS_REGISTRY.md
 ├── subprojects/
 └── workflows/
 ```
@@ -58,6 +59,7 @@ How to read this pattern:
 - `WORK_LOG.md` is the log of work done: each event has a responsible person and an artifact.
 - `BACKLOG.md` holds what has been deferred but not lost.
 - `RELEVANT_GROUNDWORK.md` points to relevant work products — without copying or duplicating them.
+- `VALUABLE_FINDINGS_REGISTRY.md` is an optional slot. Record which materials were reviewed and which thought from them is kept. This is not a work product carried into the job, and not `RELEVANT_GROUNDWORK.md`.
 - `subprojects/` is added when a distinct research or work stream appears inside the project.
 - `workflows/` holds instructions; a workflow is not a process and does not replace a separate process folder.
 
@@ -80,6 +82,7 @@ NN_ProcessName/
 ├── RELEASE_LOG.md
 ├── BACKLOG.md
 ├── RELEVANT_GROUNDWORK.md
+├── VALUABLE_FINDINGS_REGISTRY.md
 └── workflows/
 ```
 
@@ -91,6 +94,7 @@ How to read this pattern:
 - `FACTS.md` stores stable settings, links, parameters, and agreements;
 - `DECISION_LOG.md` is the log of decisions about the process logic;
 - `WORK_LOG.md` is the log of work on adjusting the process;
+- `VALUABLE_FINDINGS_REGISTRY.md` is an optional slot, the same as in a project;
 - `CYCLE_LOG.md`, `VERSION_LOG.md`, `RELEASE_LOG.md` are optional slots; create them according to the criterion; the name can be chosen at install time;
   - `CYCLE_LOG.md` — execution of a repeating cycle (do not confuse with `WORK_LOG.md`: that one is about adjusting the process);
   - `VERSION_LOG.md` — internal versions of the process and/or of the system that serves it;
@@ -147,6 +151,7 @@ NN_groundwork/
 ├── DECISION_LOG.md
 ├── WORK_LOG.md
 ├── BACKLOG.md
+├── VALUABLE_FINDINGS_REGISTRY.md
 ├── INDEXES/
 ├── crosscutting/
 └── _inbox/
@@ -158,6 +163,7 @@ How to read this pattern:
 - `CATALOG.md` is the unified registry of work-product entries (indexes, cross-cutting overviews, links to domain canons outside this folder);
 - `FACTS.md` holds stable facts about the groundwork system itself: the storage model, ID conventions, discoverability rules;
 - `BACKLOG.md` holds ideas and improvements to the groundwork system itself that sit outside the current focus;
+- `VALUABLE_FINDINGS_REGISTRY.md` is an optional slot. Record which materials were reviewed and which thought from them is kept. Catalog entries for work products are not moved here;
 - `INDEXES/` holds topical indexes (links to materials, without duplicating canons);
 - `crosscutting/` holds cross-cutting overviews that have no strong domain home;
 - `_inbox/` holds drafts awaiting classification;
@@ -244,6 +250,7 @@ NN_KnowledgeBase/
 ├── DECISION_LOG.md
 ├── WORK_LOG.md
 ├── RELEVANT_GROUNDWORK.md
+├── VALUABLE_FINDINGS_REGISTRY.md
 ├── reference/
 ├── inventories/
 └── templates/
@@ -255,6 +262,7 @@ How to read this type:
 - `README.md` explains the makeup of the sections and is the entry point;
 - `FACTS.md` stores canonical parameters, identifiers, and confirmed decisions;
 - `RELEVANT_GROUNDWORK.md` links the store to relevant indexes and overviews in the groundwork folder;
+- `VALUABLE_FINDINGS_REGISTRY.md` is an optional slot. Record which materials were reviewed and which thought from them is kept;
 - nested folders group materials by topic, not by the accidental origin of files;
 - `DECISION_LOG.md` and `WORK_LOG.md` are optional slots: decisions about norms, standards, or requirements for maintaining the store, and about actual work on its structure.
 
@@ -358,6 +366,15 @@ The `template/<type>/` skeleton is a minimum set of roles. Files and folders tha
 - Analogues: [`en/template/process/RELEVANT_GROUNDWORK.md`](en/template/process/RELEVANT_GROUNDWORK.md), [`en/template/storage/RELEVANT_GROUNDWORK.md`](en/template/storage/RELEVANT_GROUNDWORK.md), [`en/template/settings-n-servers/RELEVANT_GROUNDWORK.md`](en/template/settings-n-servers/RELEVANT_GROUNDWORK.md), [`en/template/meta-registry/RELEVANT_GROUNDWORK.md`](en/template/meta-registry/RELEVANT_GROUNDWORK.md)
 
 A backbone file for the project, process, storage, settings-n-servers, and meta-registry types. The groundwork folder itself does not need this file: that is where the catalog, indexes, and overviews live.
+
+### [VALUABLE_FINDINGS_REGISTRY.md](en/template/project/VALUABLE_FINDINGS_REGISTRY.md)
+
+- Role: a list of what was kept as valuable after materials were reviewed and studied. The English file name is registry of valuable findings.
+- What to store: which materials were reviewed and where each one sits; for each subject, the thought worth keeping. Write the thought so that a person who has not opened the material can understand it. Next to it, say where it came from.
+- When to start: in project, process, groundwork, and storage, when such a list is needed. Settings-n-servers and meta-registry do not have the slot.
+- What not to do: do not record a working mechanism, a script, or a move that is carried into the job. Groundwork products, `CATALOG.md`, and `RELEVANT_GROUNDWORK.md` are for that. Do not duplicate `FACTS.md` and `BACKLOG.md`.
+- Example: [`en/template/project/VALUABLE_FINDINGS_REGISTRY.md`](en/template/project/VALUABLE_FINDINGS_REGISTRY.md)
+- Analogues: [`en/template/process/VALUABLE_FINDINGS_REGISTRY.md`](en/template/process/VALUABLE_FINDINGS_REGISTRY.md), [`en/template/groundwork/VALUABLE_FINDINGS_REGISTRY.md`](en/template/groundwork/VALUABLE_FINDINGS_REGISTRY.md), [`en/template/storage/VALUABLE_FINDINGS_REGISTRY.md`](en/template/storage/VALUABLE_FINDINGS_REGISTRY.md)
 
 ### [DECISION_LOG.md](en/template/project/DECISION_LOG.md)
 
@@ -469,7 +486,7 @@ A backbone file for the project, process, storage, settings-n-servers, and meta-
 
 ### Logs in the skeleton
 
-In the **project** and **process** skeletons, two logs are required: `DECISION_LOG.md` (standards that could have been otherwise) and `WORK_LOG.md` (work with a responsible person and an artifact). In the other four types the same files are an optional slot. A process additionally has three optional slots: `CYCLE_LOG.md`, `VERSION_LOG.md`, `RELEASE_LOG.md`.
+In the **project** and **process** skeletons, two logs are required: `DECISION_LOG.md` (standards that could have been otherwise) and `WORK_LOG.md` (work with a responsible person and an artifact). In the other four types the same files are an optional slot. Project, process, groundwork, and storage additionally have an optional slot `VALUABLE_FINDINGS_REGISTRY.md`: a list of what was kept as valuable after materials were reviewed. This is not a work product carried into the job. A process also has three optional slots: `CYCLE_LOG.md`, `VERSION_LOG.md`, `RELEASE_LOG.md`.
 
 ### On “knowledge bases”
 

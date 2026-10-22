@@ -18,6 +18,16 @@ The scheme matches versioning of the public rules corpus [ElucidatingYourLLM](ht
 
 ---
 
+## [1.6.0] — 2026-10-22
+
+### Added
+
+- Optional slot `VALUABLE_FINDINGS_REGISTRY.md` in the project, process, groundwork, and storage types (registry of valuable findings). The file records which materials were reviewed and which thought from them is kept. This is not a work product carried into the job, and not `RELEVANT_GROUNDWORK.md`. Settings-n-servers and meta-registry do not have the slot
+- Placeholders in `template/project/`, `template/process/`, `template/groundwork/`, `template/storage/`, and the English pairs under `en/template/`
+- In `STRUCTURE_GUIDE.md`, `STRUCTURE_GUIDE.en.md`, `workflows/STRUCTURE_WORKFLOW.md`, and `workflows/STRUCTURE_WORKFLOW.en.md`: when to start the slot and when to ask
+
+---
+
 ## [1.5.1] — 2026-09-23
 
 ### Changed
@@ -122,6 +132,7 @@ The scheme matches versioning of the public rules corpus [ElucidatingYourLLM](ht
 
 ---
 
+[1.6.0]: https://github.com/FrigateCaptain/00_Hum-Mach_Readable_StructureTemplate/compare/v1.5.1...v1.6.0
 [1.5.1]: https://github.com/FrigateCaptain/00_Hum-Mach_Readable_StructureTemplate/compare/v1.5.0...v1.5.1
 [1.5.0]: https://github.com/FrigateCaptain/00_Hum-Mach_Readable_StructureTemplate/compare/v1.4.0...v1.5.0
 [1.4.0]: https://github.com/FrigateCaptain/00_Hum-Mach_Readable_StructureTemplate/compare/v1.3.1...v1.4.0

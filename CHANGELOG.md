@@ -18,6 +18,16 @@
 
 ---
 
+## [1.6.0] — 2026-10-22
+
+### Добавлено
+
+- Опциональный слот `VALUABLE_FINDINGS_REGISTRY.md` в типах project, process, groundwork и storage (registry of valuable findings). В файл пишут, какие материалы просмотрены и какую мысль из них оставляют. Это не наработка, которую переносят в дело, и не `RELEVANT_GROUNDWORK.md`. В settings-n-servers и meta-registry слота нет
+- Placeholder в `template/project/`, `template/process/`, `template/groundwork/`, `template/storage/` и в английских парах `en/template/`
+- В `STRUCTURE_GUIDE.md`, `STRUCTURE_GUIDE.en.md`, `workflows/STRUCTURE_WORKFLOW.md` и `workflows/STRUCTURE_WORKFLOW.en.md`: когда слот заводить и когда спрашивать
+
+---
+
 ## [1.5.1] — 2026-09-23
 
 ### Изменено
@@ -122,6 +132,7 @@
 
 ---
 
+[1.6.0]: https://github.com/FrigateCaptain/00_Hum-Mach_Readable_StructureTemplate/compare/v1.5.1...v1.6.0
 [1.5.1]: https://github.com/FrigateCaptain/00_Hum-Mach_Readable_StructureTemplate/compare/v1.5.0...v1.5.1
 [1.5.0]: https://github.com/FrigateCaptain/00_Hum-Mach_Readable_StructureTemplate/compare/v1.4.0...v1.5.0
 [1.4.0]: https://github.com/FrigateCaptain/00_Hum-Mach_Readable_StructureTemplate/compare/v1.3.1...v1.4.0

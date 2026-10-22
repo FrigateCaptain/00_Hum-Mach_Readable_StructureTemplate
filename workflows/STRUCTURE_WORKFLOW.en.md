@@ -48,6 +48,7 @@ Read [`STRUCTURE_GUIDE.en.md`](../STRUCTURE_GUIDE.en.md) in full. If that file i
 4. **Logs.** Show the matrix:
    - project and process: `DECISION_LOG.md` and `WORK_LOG.md` are required (like `README.md`);
    - settings-n-servers, groundwork, meta-registry, storage: the same two files are an optional slot; clarify whether to start a live log;
+   - project, process, groundwork, and storage: `VALUABLE_FINDINGS_REGISTRY.md` is an optional slot. Start it when a list is needed: which materials were reviewed and which thought from them is kept. This is not a work product carried into the job, and not `RELEVANT_GROUNDWORK.md`. Ask whether to start it. Settings-n-servers and meta-registry do not have the slot;
    - process additionally: three optional slots `CYCLE_LOG.md` (cycle execution), `VERSION_LOG.md` (internal versions), `RELEASE_LOG.md` (external releases). The slot name can be chosen at install time. Ask which of the three to start.
    Do not ask whether the required project and process logs “are needed”. Clarify only whether there are wishes for the fields of the entries.
 
@@ -65,7 +66,7 @@ Wait for answers to all questions before moving to the next stage.
 Based on the user's answers and the types in `STRUCTURE_GUIDE.en.md` (if that file is missing, `STRUCTURE_GUIDE.md` beside it):
 
 1. Assemble a custom set of folder types — taking into account which standard types the user accepted, which they declined, and which they want to add. Groundwork and `RELEVANT_GROUNDWORK.md` belong in the standard skeleton by default. The logs `DECISION_LOG.md` and `WORK_LOG.md` are required in project and process; in the other four types — according to the user's answer about the optional slot.
-2. For each accepted type, determine the skeleton-file composition — taking into account the user's wishes for fields and contents (including wishes for the contents of `RELEVANT_GROUNDWORK.md`, but not a decision to “include or not”: the file is part of the standard skeleton). For process, include the chosen slots `CYCLE_LOG.md` / `VERSION_LOG.md` / `RELEASE_LOG.md`, or do not copy slots that were not started. Check the file-name composition against `find en/template/<type>`, not against memory.
+2. For each accepted type, determine the skeleton-file composition — taking into account the user's wishes for fields and contents (including wishes for the contents of `RELEVANT_GROUNDWORK.md`, but not a decision to “include or not”: the file is part of the standard skeleton). For project, process, groundwork, and storage, include `VALUABLE_FINDINGS_REGISTRY.md` only if the owner started it. For process, include the chosen slots `CYCLE_LOG.md` / `VERSION_LOG.md` / `RELEASE_LOG.md`, or do not copy slots that were not started. Check the file-name composition against `find en/template/<type>`, not against memory.
 3. **Registries.** Ask the user whether registries already exist that list all workspace folders with purpose, description, and status. If the user does not know or there are no registries — look through the workspace and suggest where they might be (typical places: workspace root, a meta folder, `registries/`). Based on the result, determine what to do with the registries:
    - **they exist and are current** — treat them as the source of truth for further work;
    - **they exist but are incomplete or outdated** — plan an update;
